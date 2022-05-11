@@ -18,7 +18,7 @@ public class CategoryDaoImpl implements CategoryDao {
 	@Override
 	public List<CategoryModel> get6cate() {
 		List<CategoryModel> list = new ArrayList<CategoryModel>();
-		String sql = "SELECT top 6* FROM Category order by CategoryID ASC";
+		String sql = "SELECT * FROM Category order by CategoryID ASC limit 6";
 
 		try {
 			// mở kết nối
